@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mi_primer_loginscreen_en_flutter/widgets/login_button.dart';
-import 'package:mi_primer_loginscreen_en_flutter/widgets/login_footer_text.dart';
-import 'package:mi_primer_loginscreen_en_flutter/widgets/login_input_fields.dart';
-import 'package:mi_primer_loginscreen_en_flutter/widgets/login_logo.dart';
-import 'package:mi_primer_loginscreen_en_flutter/widgets/login_welcome_text.dart';
+
+// Widgets
+import '../widgets/login_button.dart';
+import '../widgets/login_footer_text.dart';
+import '../widgets/login_input_fields.dart';
+import '../widgets/login_logo.dart';
+import '../widgets/login_welcome_text.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -39,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(
                       height: size.height *
                           0.06), // Espaciado entre texto de bienvenida y campos de entrada
-                  const LoginInputFields(),
+                  const LoginForm(),
                   SizedBox(
                       height: size.height *
                           0.08), // Espaciado entre campos de entrada y botón de ingresar
